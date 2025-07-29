@@ -13,7 +13,7 @@ import Student from './components/Student/Student'
 import Campus from './components/Campus/Campus'
 import Company from './components/Company/Company'
 import Learn from './components/Learn/Learn'
-import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import ScrollToTop from './components/Scrolltotop/ScrollToTop'
 
 const Home = () => (
   <>
