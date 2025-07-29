@@ -1,0 +1,128 @@
+.company-container {
+  font-family: 'Poppins', sans-serif;
+  color: #212EA0;
+  background-color: #ffffff;
+  padding: 60px 5%;
+  width: 100%;
+}
+
+/* Hero Section */
+.company-hero {
+  background-color: #f0f4ff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+.company-hero h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #212EA0;
+  margin-bottom: 15px;
+}
+
+.company-hero p {
+  font-size: 16px;
+  color: #676767;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Company Plans */
+.company-plan {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.company-plan:hover {
+  transform: translateY(-5px);
+}
+
+.company-plan h2 {
+  font-size: 20px;
+  color: #212EA0;
+  margin-bottom: 10px;
+}
+
+.company-plan p {
+  font-size: 14px;
+  color: #676767;
+  margin-bottom: 10px;
+}
+
+.company-plan ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.company-plan ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #676767;
+}
+
+.company-plan ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #212EA0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Button */
+.company-button {
+  display: inline-block;
+  background-color: #212EA0;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.company-button:hover {
+  background-color: #1a1c6b;
+}
+
+/* Benefits Section */
+.company-benefits {
+  margin-top: 60px;
+}
+
+.company-benefits h2 {
+  font-size: 22px;
+  color: #212EA0;
+  margin-bottom: 20px;
+}
+
+.company-benefits ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.company-benefits ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  color: #676767;
+  font-size: 14px;
+}
+
+.company-benefits ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #212EA0;
+  font-weight: bold;
+}

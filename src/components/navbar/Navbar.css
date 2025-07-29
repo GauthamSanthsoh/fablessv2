@@ -1,0 +1,77 @@
+nav {
+    width: 100%;
+    color: #000; /* Black text by default */
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    transition: background 0.5s, color 0.5s; /* Add color transition */
+}
+
+.logo {
+    width: 180px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+}
+
+/* Dark navigation styles - text becomes white */
+.dark-nav {
+    background: #000000;
+    color: #fff; /* White text when dark background */
+    transition: 0.5s;
+}
+
+/* Dropdown container */
+.dropdown-container {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(33, 46, 160, 0.15);
+    min-width: 220px;
+    z-index: 1000;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+    display: block;
+    padding: 12px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Hover effect */
+.dropdown-item:hover {
+    background-color: #f3f4ff;
+    padding-left: 25px;
+}
+
+/* Ensure dropdown text remains black even in dark-nav */
+.dark-nav .dropdown-menu {
+    color: #000; /* Force dropdown text to stay black */
+}
+
+.dark-nav .dropdown-item {
+    color: #000; /* Force dropdown items to stay black */
+}

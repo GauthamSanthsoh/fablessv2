@@ -1,0 +1,123 @@
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.program {
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.program img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    filter: blur(3px);
+    transition: all 0.4s ease;
+}
+
+.program:hover img {
+    filter: blur(5px);
+}
+
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 15, 152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: all 0.4s ease;
+}
+
+.caption img {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    transition: transform 0.3s ease;
+}
+
+.caption h3 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    font-weight: 600;
+}
+
+.caption p {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 30px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    line-height: 1.6;
+}
+
+.program:hover .caption {
+    opacity: 1;
+    padding-top: 0;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.program:hover .caption img {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .caption h3 {
+        font-size: 2rem;
+    }
+    .caption p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .programs {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .program {
+        flex-basis: 45%;
+    }
+    .caption img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .program {
+        flex-basis: 100%;
+        max-width: 500px;
+    }
+    .caption h3 {
+        font-size: 1.8rem;
+    }
+    .caption p {
+        font-size: 1.1rem;
+    }
+}
